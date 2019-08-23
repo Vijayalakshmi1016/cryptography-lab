@@ -1,7 +1,7 @@
 # cryptography-lab 
 Cryptography Algorithms for 7th semester VTU
 
-contents:
+contents:\n
 1)caesar cipher(16/08/2019)
 2)railfence cipher(16/08/2019)
 3)columnar transposition cipher(16/08/2019)
