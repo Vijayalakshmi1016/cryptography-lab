@@ -1,2 +1,2 @@
 # cryptography-lab
-Cryptography algorithms
+Cryptography Algorithms for 7th semester VTU
