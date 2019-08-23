@@ -1,37 +1,48 @@
+#include <bits/stdc++.h>
 #include <iostream>
 using namespace std;
 
 int main() {
 
-	  string  s;
-	  cout<<"Enter the text to be encrytped\n";
-	  cin>>s;
-    int k=0;
-		
-    cout<<"enter key\n";
-		cin>>k;
-		
-    cout<<" encrytped text is\n";
-		int n=s.size();
-		int a[26],p=97;
-		
-    for(int i=0;i<26;i++)
-		{
-			a[i]=p++;
-		}	
-    for(int i=0;i<n;i++)
-		{
-			int y=s[i]-'a';
-			s[i]=a[(y+k)%26];
-		}
-		cout<<s<<endl;
-	  cout<<" decrytped text is\n";
-			
-    for(int i=0;i<n;i++)
-		{
-			int y=s[i]-'a';
-			s[i]=a[(y-k+26)%26];
-		}
-		cout<<s<<endl;
-	  return 0;
-}
+  int i,k ;
+
+  string s="",v="",a="",word,p="";
+  cout<<"Enter the text to be encrytped: ";
+  getline(cin,s);
+  cout<<"\nEnter key: ";
+  cin>>k;
+    
+  stringstream ss(s);
+  while(ss>>word)
+  {
+    p.append(word);
+  }
+
+  int c=0;
+  int n=p.size()/k;
+  int l=p.size();
+
+  while(c<k)
+ { 
+   for(i=c;i<l;i+=k)
+    {
+      a+=p[i];
+    } 
+    c++;
+ }
+ c=0;
+  cout<<"\nEncrytped text is ";
+  cout<<a<<endl;
+  
+  cout<<"Decrytped text is: ";
+  while(c<n)
+ { 
+   for(i=c;i<l;i+=n)
+  {
+     v+=a[i];
+  }
+  c++;
+ } 
+ cout<<v<<endl;
+ return 0;
+ }
