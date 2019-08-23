@@ -2,16 +2,16 @@
 using namespace std;
 
 int main() {
-	// your code goes here
-	string  s;
-		cout<<"Enter the text to be encrytped\n";
+	
+		string  s;
+		cout<<"Enter the text to be encrytped: ";
 		cin>>s;
 		int k=0;
     
-		cout<<"enter key\n";
+		cout<<"\nEnter key: ";
 		cin>>k;
     
-		cout<<" encrytped text is\n";
+		cout<<"\nEncrytped text is\n";
 		int n=s.size();
 		int a[26],p=97;
     
