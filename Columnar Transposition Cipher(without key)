@@ -4,8 +4,7 @@ using namespace std;
 
 int main() {
 
-  int i ;
-
+  int i;
   string s,word,p;
   cout<<"Enter the text to be encrytped: ";
   getline(cin,s);
@@ -15,36 +14,41 @@ int main() {
   {
     p.append(word);
   }
-
+cout<<p<<endl;
   int count=0,j;
-  int n=(p.size()/4)+1;
-  char a[n][4];
+  int n;
+  if((p.size()/4)==0) n=p.size()/4;
+  else n=(p.size()/4)+1;
+  char a[n][4]={' '};
 
   for(i=0;i<n;i++)
   {
     for(j=0;j<4;j++)
     {
-      if(count<p.size())
+      if(count<=p.size())
         a[i][j]=p[count++];
-      else break;
+      else a[i][j]=' ';
     }
   }
-  
-  for(i=0;i<n;i++)
+
+  for(i=0;i<4;i++)
   {
-    for(j=0;j<4;j++)
+    for(j=0;j<n;j++)
     {
-      if((a[j][i]>=65&&a[j][i]<=90) ||( a[j][i]>=97 && a[j][i]<=122))
+      if(( a[j][i]!=' '))
           cout<<a[j][i];
     }
   }
+  cout<<endl;
+
   for(i=0;i<n;i++)
   {
     for(j=0;j<4;j++)
     {
-        if((a[i][j]>=65&&a[i][j]<=90) ||( a[i][j]>=97 && a[i][j]<=122))
+        if(( a[j][i]!=' '))
           cout<<a[i][j];
     }
   }
 return 0;
 }
+
