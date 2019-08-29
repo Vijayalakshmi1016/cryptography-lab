@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-  int i;
+  int i,j,count=0;
   string s,word,p;
   cout<<"Enter the text to be encrytped: ";
   getline(cin,s);
@@ -14,8 +14,7 @@ int main() {
   {
     p.append(word);
   }
-cout<<p<<endl;
-  int count=0,j;
+
   int n;
   if((p.size()/4)==0) n=p.size()/4;
   else n=(p.size()/4)+1;
@@ -30,8 +29,9 @@ cout<<p<<endl;
       else a[i][j]=' ';
     }
   }
+cout<<"encrytped word  is : "<<endl;
 
-  for(i=0;i<4;i++)
+for(i=0;i<4;i++)
   {
     for(j=0;j<n;j++)
     {
@@ -39,8 +39,8 @@ cout<<p<<endl;
           cout<<a[j][i];
     }
   }
-  cout<<endl;
 
+cout<<"\ndecrypted  is:\n";
   for(i=0;i<n;i++)
   {
     for(j=0;j<4;j++)
