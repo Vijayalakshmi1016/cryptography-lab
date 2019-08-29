@@ -45,7 +45,7 @@ cout<<"\ndecrypted  is:\n";
   {
     for(j=0;j<4;j++)
     {
-        if(( a[j][i]!=' '))
+        if(( a[i][j]!=' '))
           cout<<a[i][j];
     }
   }
