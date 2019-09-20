@@ -8,3 +8,7 @@ contents:
 2)railfence cipher(16/08/2019)
 
 3)columnar transposition cipher(16/08/2019)
+
+4)playfair  cipher
+
+5)hill cipher
