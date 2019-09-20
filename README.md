@@ -9,6 +9,6 @@ contents:
 
 3)columnar transposition cipher(16/08/2019)
 
-4)playfair  cipher
+4)playfair  cipher(23/08/2019)
 
-5)hill cipher
+5)hill cipher(23/08/2019)
